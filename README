@@ -1,0 +1,18 @@
+librmc: A C implementation to parse NMEA0183 RMC sentences
+
+TO BUILD
+
+Use 'make' under Linux or Cygwin
+
+USAGE
+
+(1) ./rmc_test
+	Output test results on a limited number of hard-coded test cases
+
+(2) ./rmc_test output_file
+	Dump randomly generated RMC sentences to output_file
+	e.g., ./rmc_test rmc_raw
+
+(3) ./rmc_test input_file output_file
+	Read content of input_file and output the first 100 valid GPS fixes to output_file
+	e.g., ./rmc_test rmc_raw rmc_fixes

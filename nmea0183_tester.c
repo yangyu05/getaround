@@ -238,7 +238,7 @@ static int readline(FILE *f, char *buf, int len)
 		i++;
 	}
 
-	if (c = '\n') {
+	if (c == '\n') {
 		buf[--i] = '\0';
 	}
 	
